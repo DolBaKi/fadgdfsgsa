@@ -1,18 +1,6 @@
-# Build and Release Folders
-bin-debug/
-bin-release/
-[Oo]bj/
-[Bb]in/
-
-# Other files and folders
-.settings/
-
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
-
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+git init tensorflowdolbak
+cd tensorflowdolbak
+git config core.sparseCheckout true
+git remote add -f origin https://github.com/tensorflow/examples.git
+echo lite/examples/image_classification/android > .git/info/sparse-checkout
+git pull origin master
